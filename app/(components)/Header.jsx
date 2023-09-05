@@ -1,20 +1,29 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import { Michroma } from 'next/font/google'
 import Link from 'next/link'
+import IonIcon from '@reacticons/ionicons'
+import './Header.css'
 
 const michroma = Michroma({ weight: '400', subsets: ['latin'] })
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <header className={`${michroma.className} h-16 border-b`}>
-      <div className=' h-full flex items-center justify-between mx-12'>
+      <div className=' h-full flex items-center justify-between mx-4 sm:mx-12'>
         <div>
           <Link href='/'>
             <span>NESTOR</span> <br /> <span>CICARDINI</span>
           </Link>
         </div>
 
-        <ul className='flex gap-4'>
+        <span className='sm:hidden cursor-pointer' onClick={() => setMenuOpen(!menuOpen)}>
+          <IonIcon name='menu-outline' size='large' />
+        </span>
+
+        <ul className='hidden sm:flex gap-4'>
           <li>
             <Link href='#' className='hover:font-bold hover-underline-animation'>
               About me
@@ -34,6 +43,25 @@ function Header() {
             <Link href='#' className='hover:font-bold hover-underline-animation'>
               Projects
             </Link>
+          </li>
+        </ul>
+
+        <ul
+          className={`flex sm:hidden flex-col fixed top-0 end-0 mt-16 p-4 gap-4 text-right text-2xl nav-menu ${
+            menuOpen ? 'open' : ''
+          }`}
+        >
+          <li>
+            <Link href='#'>About me</Link>
+          </li>
+          <li>
+            <Link href='#'>Skills</Link>
+          </li>
+          <li>
+            <Link href='#'>Contact</Link>
+          </li>
+          <li>
+            <Link href='#'>Projects</Link>
           </li>
         </ul>
       </div>
