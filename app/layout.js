@@ -5,7 +5,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Nestor Cicardini',
-  description: 'Hello world, I am nestor cicardini a Fullstack Developer'
+  description: 'Hello world, I am nestor cicardini a Fullstack Developer',
+  icons: {
+    icon: '/favicon.ico'
+  }
 }
 
 export default function RootLayout({ children }) {
