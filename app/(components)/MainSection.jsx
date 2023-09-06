@@ -1,11 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import { Chakra_Petch } from 'next/font/google'
+import { chakra } from '../../lib/fonts'
 import IonIcon from '@reacticons/ionicons'
 import './MainSection.css'
 import Link from 'next/link'
-
-const chakra = Chakra_Petch({ weight: ['300', '400', '700'], subsets: ['latin'] })
 
 function MainSection() {
   return (

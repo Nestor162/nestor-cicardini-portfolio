@@ -1,11 +1,9 @@
 'use client'
 import React, { useState } from 'react'
-import { Michroma } from 'next/font/google'
+import { michroma } from '../../lib/fonts'
 import Link from 'next/link'
 import IonIcon from '@reacticons/ionicons'
 import './Header.css'
-
-const michroma = Michroma({ weight: '400', subsets: ['latin'] })
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
