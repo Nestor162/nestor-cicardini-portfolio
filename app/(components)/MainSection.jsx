@@ -25,13 +25,17 @@ function MainSection() {
       </section>
       <section className='flex justify-center gap-20 items-center'>
         <div className='flex gap-4 ms-4 speech-bubble'>
-          <Link className='social-icon' href='https://github.com/Nestor162'>
+          <Link className='social-icon' href='https://github.com/Nestor162' target='blank'>
             <IonIcon name='logo-github' size='large'></IonIcon>
           </Link>
-          <Link className='social-icon' href='https://www.linkedin.com/in/nestor-cicardini-fullstack-developer/'>
+          <Link
+            className='social-icon'
+            href='https://www.linkedin.com/in/nestor-cicardini-fullstack-developer/'
+            target='blank'
+          >
             <IonIcon name='logo-linkedin' size='large'></IonIcon>
           </Link>
-          <Link className='social-icon' href='mailto:nestorcicardini@gmail.com'>
+          <Link className='social-icon' href='mailto:nestorcicardini@gmail.com' target='blank'>
             <IonIcon name='mail-outline' size='large'></IonIcon>
           </Link>
         </div>
