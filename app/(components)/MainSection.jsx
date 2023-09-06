@@ -37,6 +37,12 @@ function MainSection() {
         </div>
         <div className='neon-border-button ms-1'>Download CV</div>
       </section>
+      <div className='flex justify-center mt-24'>
+        <div className='w-32'>
+          <div class='chevron bounce'></div>
+          <div class='chevron bounce'></div>
+        </div>
+      </div>
     </main>
   )
 }
