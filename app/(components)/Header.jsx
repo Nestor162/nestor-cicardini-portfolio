@@ -23,7 +23,7 @@ function Header() {
 
         <ul className='hidden sm:flex gap-4'>
           <li>
-            <Link href='#' className='hover:font-bold hover-underline-animation'>
+            <Link href='#about' className='hover:font-bold hover-underline-animation'>
               About me
             </Link>
           </li>
@@ -45,21 +45,49 @@ function Header() {
         </ul>
 
         <ul
-          className={`flex sm:hidden flex-col fixed top-0 end-0 mt-16 p-4 gap-4 text-right text-2xl nav-menu ${
+          className={`flex sm:hidden flex-col fixed top-0 end-0 mt-16 p-4 gap-4 text-right text-2xl border-l border-black shadow-lg nav-menu ${
             menuOpen ? 'open' : ''
           }`}
         >
           <li>
-            <Link href='#'>About me</Link>
+            <Link
+              href='#about'
+              onClick={() => {
+                setMenuOpen(false)
+              }}
+            >
+              About me
+            </Link>
           </li>
           <li>
-            <Link href='#'>Skills</Link>
+            <Link
+              href='#'
+              onClick={() => {
+                setMenuOpen(false)
+              }}
+            >
+              Skills
+            </Link>
           </li>
           <li>
-            <Link href='#'>Contact</Link>
+            <Link
+              href='#'
+              onClick={() => {
+                setMenuOpen(false)
+              }}
+            >
+              Contact
+            </Link>
           </li>
           <li>
-            <Link href='#'>Projects</Link>
+            <Link
+              href='#'
+              onClick={() => {
+                setMenuOpen(false)
+              }}
+            >
+              Projects
+            </Link>
           </li>
         </ul>
       </div>
