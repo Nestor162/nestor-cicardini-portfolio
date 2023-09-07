@@ -9,7 +9,7 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className={`${michroma.className} h-16 border-b`}>
+    <header className={`${michroma.className} h-16 border-b border-gray-600`}>
       <div className=' h-full flex items-center justify-between mx-4 sm:mx-12'>
         <div>
           <Link href='/'>
