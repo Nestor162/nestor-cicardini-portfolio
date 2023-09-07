@@ -8,6 +8,7 @@ function AboutMe() {
         className={`${chakra.className} relative w-5/6 md:w-3/5 text-xl mx-auto space-y-4 mb-6 border border-gray-600 rounded py-3 px-10 md:py-5 md:px-12 mt-32 md:mt-40`}
       >
         <h2 className={`${michroma.className} absolute -top-5 left-4 text-2xl bg-white px-3`}>About Me</h2>
+        <span id='about' className='absolute -top-28 w-14 h-8'></span>
 
         <p>Hello! My name is Nestor Cicardini, and I&apos;m a passionate full-stack programmer from Argentina. 🇦🇷 </p>
         <p>
