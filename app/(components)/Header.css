@@ -1,5 +1,7 @@
 .nav-menu:not(.open) {
   /* display: none; */
+  height: 100%;
+  width: 16rem;
   transform: translateX(100%);
   transition: all 0.4s ease;
   transition-timing-function: cubic-bezier(0.79, 0.14, 0.15, 0.86);
