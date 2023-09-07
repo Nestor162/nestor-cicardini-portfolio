@@ -7,22 +7,37 @@ import Link from 'next/link'
 
 function MainSection() {
   return (
-    <main className={chakra.className}>
-      <section className='flex justify-center gap-9 items-center mt-16'>
+    <main className={`${chakra.className} w-screen`}>
+      <section className='flex flex-col sm:flex-row justify-center gap-0 sm:gap-9 items-center mt-20 sm:mt-32'>
         <Image
           src={'/img/Profile_picture_purple_v1.png'}
           alt='Profile picture of Nestor Cicardini'
           width={245}
           height={245}
         />
-        <h1 className='text-5xl font-bold flex flex-col'>
+        <div className='flex sm:hidden gap-4 speech-bubble mb-4 '>
+          <Link className='social-icon' href='https://github.com/Nestor162' target='blank'>
+            <IonIcon name='logo-github' size='large'></IonIcon>
+          </Link>
+          <Link
+            className='social-icon'
+            href='https://www.linkedin.com/in/nestor-cicardini-fullstack-developer/'
+            target='blank'
+          >
+            <IonIcon name='logo-linkedin' size='large'></IonIcon>
+          </Link>
+          <Link className='social-icon' href='mailto:nestorcicardini@gmail.com' target='blank'>
+            <IonIcon name='mail-outline' size='large'></IonIcon>
+          </Link>
+        </div>
+        <h1 className='text-center sm:text-left text-5xl font-bold flex flex-col mb-4 sm:mb-0'>
           <span className='mb-3'>I am a </span>
           <span className='animated-gradient-text'>FullStack</span>
           <span className='animated-gradient-text mb-3'>Developer</span>
         </h1>
       </section>
-      <section className='flex justify-center gap-20 items-center'>
-        <div className='flex gap-4 ms-4 speech-bubble'>
+      <section className='flex flex-col sm:flex-row justify-center gap-20 items-center'>
+        <div className='hidden sm:flex gap-4 ms-4 speech-bubble '>
           <Link className='social-icon' href='https://github.com/Nestor162' target='blank'>
             <IonIcon name='logo-github' size='large'></IonIcon>
           </Link>
