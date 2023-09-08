@@ -112,7 +112,7 @@ function SkillsSection() {
 
         <h4 className='hidden xl:block absolute -rotate-90 top-16 start-0'>Frontend</h4>
 
-        <h4 className='block xl:hidden text-center mt-7 sm:mt-14'>Frontend</h4>
+        <h4 className='block xl:hidden text-center mt-7 font-bold'>Frontend</h4>
 
         <div className='flex justify-center items-center gap-4 flex-wrap mt-3 sm:mt-7 '>
           {skillsFront.map(skill => (
@@ -124,7 +124,7 @@ function SkillsSection() {
         </div>
 
         <h4 className='hidden xl:block absolute -rotate-90 top-52 start-0'>Backend</h4>
-        <h4 className='block xl:hidden text-center mt-14'>Backend</h4>
+        <h4 className='block xl:hidden text-center mt-10 font-bold'>Backend</h4>
 
         <div className='flex justify-center items-center gap-4 flex-wrap mt-3 sm:mt-14'>
           {skillsBack.map(skill => (
@@ -138,7 +138,7 @@ function SkillsSection() {
         <h4 className='hidden xl:block absolute -rotate-90 start-3' style={{ top: '21.5rem' }}>
           Tools
         </h4>
-        <h4 className='block xl:hidden text-center mt-14'>Tools</h4>
+        <h4 className='block xl:hidden text-center mt-10 font-bold'>Tools</h4>
 
         <div className='flex justify-center items-center gap-4 flex-wrap sm:mt-14 mt-3 mb-7'>
           {tools.map(skill => (
