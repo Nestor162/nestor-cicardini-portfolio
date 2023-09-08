@@ -10,6 +10,7 @@ function MainSection() {
     <main className={`${chakra.className} w-screen`}>
       <section className='flex flex-col sm:flex-row justify-center gap-0 sm:gap-9 items-center mt-20 sm:mt-32'>
         <Image
+          priority
           src={'/img/Profile_picture_purple_v1.png'}
           alt='Profile picture of Nestor Cicardini'
           width={245}
