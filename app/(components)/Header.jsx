@@ -30,7 +30,7 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link href='#' className='hover:font-bold hover-underline-animation'>
+            <Link href='#skills' className='hover:font-bold hover-underline-animation'>
               Skills
             </Link>
           </li>
@@ -63,7 +63,7 @@ function Header() {
           </li>
           <li>
             <Link
-              href='#'
+              href='#skills'
               onClick={() => {
                 setMenuOpen(false)
               }}
