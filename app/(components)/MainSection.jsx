@@ -56,8 +56,8 @@ function MainSection() {
       </section>
       <div className='flex justify-center mt-24'>
         <div className='w-32'>
-          <div class='chevron bounce'></div>
-          <div class='chevron bounce'></div>
+          <div className='chevron bounce'></div>
+          <div className='chevron bounce'></div>
         </div>
       </div>
     </main>
