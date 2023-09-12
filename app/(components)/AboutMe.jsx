@@ -10,14 +10,20 @@ function AboutMe() {
         <h2 className={`${michroma.className} absolute -top-5 left-4 text-2xl bg-white px-3`}>About Me</h2>
         <span id='about' className='absolute -top-28 w-14 h-8'></span>
 
-        <p>Hello! My name is Nestor Cicardini, and I&apos;m a passionate full-stack programmer from Argentina. </p>
         <p>
-          Despite being a novice programmer, I&apos;ve already tackled personal projects, gaining hands-on experience
-          and building a strong foundation in various programming languages, frameworks, and technologies.
+          full-stack programmer from Argentina Hello! My name is <strong>Nestor Cicardini</strong>, and I&apos;m a
+          passionate <strong>full-stack programmer from Argentina</strong>.{' '}
         </p>
         <p>
-          What sets me apart is my insatiable curiosity and commitment to staying updated with industry trends, always
-          ready to embrace new challenges and expand my skill set.
+          Despite being a novice programmer, I&apos;ve already tackled personal projects, gaining{' '}
+          <strong>hands-on experience </strong>
+          and building a <strong>strong foundation</strong> in various programming languages, frameworks, and
+          technologies.
+        </p>
+        <p>
+          What sets me apart is my <strong>insatiable curiosity</strong> and commitment to{' '}
+          <strong>staying updated</strong> with industry trends, always ready to embrace new challenges and expand my
+          skill set.
         </p>
 
         {/* <p>
