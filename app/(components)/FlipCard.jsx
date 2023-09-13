@@ -3,7 +3,7 @@ const { default: Image } = require('next/image')
 import IonIcon from '@reacticons/ionicons'
 import React from 'react'
 
-function FlipCard({ title, img1, img2, description, children, linkDemo, linkGitHub }) {
+function FlipCard({ title, img1, img2, description, children, linkDemo, linkGitHub, img1Width }) {
   return (
     <div class='card-container'>
       <div class='card top-4'>
@@ -14,7 +14,7 @@ function FlipCard({ title, img1, img2, description, children, linkDemo, linkGitH
               className='absolute top-24 right-20 z-10'
               src={img1}
               alt={`${title} project in a laptop screen`}
-              width={240}
+              width={img1Width}
               height={350}
             />
             <Image

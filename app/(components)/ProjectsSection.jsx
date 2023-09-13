@@ -17,6 +17,7 @@ function ProjectsSection() {
           <FlipCard
             title='Minimal Weather App'
             img1='/img/laptop-mwa.png'
+            img1Width={240}
             img2='/img/pc-mwa.png'
             description={'Weather application with a clean and minimalistic interface.'}
             linkDemo='https://minimalweatherapp.vercel.app/'
@@ -42,12 +43,13 @@ function ProjectsSection() {
             />
           </FlipCard>
           <FlipCard
-            title='Minimal Weather App'
-            img1='/img/laptop-mwa.png'
-            img2='/img/pc-mwa.png'
-            description={'Weather application with a clean and minimalistic interface.'}
-            linkDemo='https://minimalweatherapp.vercel.app/'
-            linkGitHub='https://github.com/Nestor162/U3-D10-Weekly-Homework-Weather-App'
+            title='SkillTrade'
+            img1='/img/tablet-skilltrade.png'
+            img1Width={450}
+            img2='/img/laptop-skilltrade.png'
+            description={'Skills exchange platform.'}
+            linkDemo='https://skilltrade.vercel.app/'
+            linkGitHub='https://github.com/Nestor162/SkillTrade-Capstone-Project-Frontend'
           >
             <Image
               src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
@@ -56,14 +58,26 @@ function ProjectsSection() {
               height={50}
             />
             <Image
-              src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg'
-              alt='redux icon'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg'
+              alt='bootstrap icon'
               width={50}
               height={50}
             />
             <Image
-              src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg'
-              alt='bootstrap icon'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'
+              alt='java icon'
+              width={50}
+              height={50}
+            />
+            <Image
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg'
+              alt='spring icon'
+              width={50}
+              height={50}
+            />
+            <Image
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
+              alt='postgresql icon'
               width={50}
               height={50}
             />
