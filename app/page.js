@@ -1,4 +1,5 @@
 import AboutMe from './(components)/AboutMe'
+import ContactSection from './(components)/ContactSection'
 import Header from './(components)/Header'
 import MainSection from './(components)/MainSection'
 import ProjectsSection from './(components)/ProjectsSection'
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutMe />
       <SkillsSection />
       <ProjectsSection />
+      <ContactSection />
     </main>
   )
 }
