@@ -1,13 +1,24 @@
+'use client'
 const { default: Image } = require('next/image')
-
 import IonIcon from '@reacticons/ionicons'
-import React from 'react'
+import React, { useState } from 'react'
 
 function FlipCard({ title, img1, img2, description, children, linkDemo, linkGitHub, img1Width }) {
+  const [isToggled, setToggle] = useState(false)
+
+  const handleHover = () => {
+    setToggle(!isToggled)
+  }
+
   return (
-    <div class='card-container'>
-      <div class='card top-4'>
-        <div class='front'>
+    <div className='card-container'>
+      <div
+        className={`card ${isToggled ? 'hover' : ''}`}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleHover}
+        onTouchEnd={handleHover}
+      >
+        <div className='front'>
           <div className='relative h-72 w-72'>
             <h3 className='text-center font-bold text-lg mt-4'>{title}</h3>
             <Image
@@ -25,9 +36,9 @@ function FlipCard({ title, img1, img2, description, children, linkDemo, linkGitH
               height={350}
             />
           </div>
-          <div class='details'></div>
+          <div className='details'></div>
         </div>
-        <div class='back flex flex-col '>
+        <div className='back flex flex-col '>
           <div className='p-4'>{description}</div>
           <div className='flex gap-2'>{children}</div>
           <div className='flex gap-4'>
