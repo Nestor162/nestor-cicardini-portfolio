@@ -13,7 +13,7 @@ function ProjectsSection() {
         <h2 className={`${michroma.className} absolute -top-5 left-4 text-2xl bg-white px-3`}>Projects</h2>
         <span id='projects' className='absolute -top-24 sm:-top-28 w-14 h-8'></span>
 
-        <div className='relative w-full h-full flex justify-center items-center gap-5 flex-col lg:flex-row p-10'>
+        <div className='relative w-full h-full flex justify-center items-center gap-0 sm:gap-5 flex-col lg:flex-row p-0 sm:p-10'>
           <FlipCard
             title='Minimal Weather App'
             img1='/img/laptop-mwa.png'
@@ -42,46 +42,48 @@ function ProjectsSection() {
               height={50}
             />
           </FlipCard>
-          <FlipCard
-            title='SkillTrade'
-            img1='/img/tablet-skilltrade.png'
-            img1Width={450}
-            img2='/img/laptop-skilltrade.png'
-            description={'Skills exchange platform.'}
-            linkDemo='https://skilltrade.vercel.app/'
-            linkGitHub='https://github.com/Nestor162/SkillTrade-Capstone-Project-Frontend'
-          >
-            <Image
-              src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
-              alt='react icon'
-              width={50}
-              height={50}
-            />
-            <Image
-              src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg'
-              alt='bootstrap icon'
-              width={50}
-              height={50}
-            />
-            <Image
-              src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'
-              alt='java icon'
-              width={50}
-              height={50}
-            />
-            <Image
-              src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg'
-              alt='spring icon'
-              width={50}
-              height={50}
-            />
-            <Image
-              src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
-              alt='postgresql icon'
-              width={50}
-              height={50}
-            />
-          </FlipCard>
+          <div className='-mt-12 sm:mt-0'>
+            <FlipCard
+              title='SkillTrade'
+              img1='/img/tablet-skilltrade.png'
+              img1Width={450}
+              img2='/img/laptop-skilltrade.png'
+              description={'Skills exchange platform.'}
+              linkDemo='https://skilltrade.vercel.app/'
+              linkGitHub='https://github.com/Nestor162/SkillTrade-Capstone-Project-Frontend'
+            >
+              <Image
+                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+                alt='react icon'
+                width={50}
+                height={50}
+              />
+              <Image
+                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg'
+                alt='bootstrap icon'
+                width={50}
+                height={50}
+              />
+              <Image
+                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'
+                alt='java icon'
+                width={50}
+                height={50}
+              />
+              <Image
+                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg'
+                alt='spring icon'
+                width={50}
+                height={50}
+              />
+              <Image
+                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
+                alt='postgresql icon'
+                width={50}
+                height={50}
+              />
+            </FlipCard>
+          </div>
         </div>
       </div>
     </article>

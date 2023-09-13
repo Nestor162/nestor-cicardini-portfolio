@@ -11,7 +11,7 @@ function FlipCard({ title, img1, img2, description, children, linkDemo, linkGitH
   }
 
   return (
-    <div className='card-container'>
+    <div className='card-container scale-y-[.65] scale-x-[.65] sm:scale-100'>
       <div
         className={`card ${isToggled ? 'hover' : ''}`}
         onMouseEnter={handleHover}
