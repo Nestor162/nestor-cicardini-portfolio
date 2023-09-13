@@ -5,7 +5,7 @@ import { vt323 } from '../../lib/fonts'
 function PixelCharacter() {
   return (
     <>
-      <span className={`${vt323.className} flex flex-col items-center gap-3 relative scale-[0.9]`}>
+      <span className={`${vt323.className} flex flex-col items-center gap-3 relative scale-y-[0.9]`}>
         <Image
           className='absolute right-2/4'
           src='/img/pixel-avatar/pixel-avatar.png'
@@ -60,6 +60,13 @@ function PixelCharacter() {
             <span className='absolute bottom-[15px] right-5 text-2xl'>Email</span>
           </span>
         </a>
+        <Image
+          className='absolute -bottom-[39px] -z-50 w-screen'
+          src='/img/grass-v3.png'
+          alt='pixel art github logo'
+          width={1600}
+          height={1000}
+        />
       </span>
     </>
   )
