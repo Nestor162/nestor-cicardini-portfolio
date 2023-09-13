@@ -35,13 +35,13 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link href='#' className='hover:font-bold hover-underline-animation'>
-              Contact
+            <Link href='#projects' className='hover:font-bold hover-underline-animation'>
+              Projects
             </Link>
           </li>
           <li>
             <Link href='#' className='hover:font-bold hover-underline-animation'>
-              Projects
+              Contact
             </Link>
           </li>
         </ul>
@@ -73,12 +73,12 @@ function Header() {
           </li>
           <li>
             <Link
-              href='#'
+              href='#projects'
               onClick={() => {
                 setMenuOpen(false)
               }}
             >
-              Contact
+              Projects
             </Link>
           </li>
           <li>
@@ -88,7 +88,7 @@ function Header() {
                 setMenuOpen(false)
               }}
             >
-              Projects
+              Contact
             </Link>
           </li>
         </ul>
