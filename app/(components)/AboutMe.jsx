@@ -11,8 +11,8 @@ function AboutMe() {
         <span id='about' className='absolute -top-28 w-14 h-8'></span>
 
         <p>
-          full-stack programmer from Argentina Hello! My name is <strong>Nestor Cicardini</strong>, and I&apos;m a
-          passionate <strong>full-stack programmer from Argentina</strong>.{' '}
+          Hello! My name is <strong>Nestor Cicardini</strong>, and I&apos;m a passionate{' '}
+          <strong>full-stack programmer from Argentina</strong>.{' '}
         </p>
         <p>
           Despite being a novice programmer, I&apos;ve already tackled personal projects, gaining{' '}
