@@ -11,7 +11,7 @@ function PixelCharacter() {
           src='/img/pixel-avatar/pixel-avatar.png'
           width={185}
           height={185}
-          alt='pixel art representaiton of me'
+          alt='pixel art representaiton of Nestor'
         />
         <a
           href='https://www.linkedin.com/in/nestor-cicardini-fullstack-developer/'
@@ -33,7 +33,7 @@ function PixelCharacter() {
               width={28}
               height={28}
             />
-            <span className='absolute top-[13px] left-[167px] text-2xl'>LinkedIn</span>
+            <span className='absolute top-[13px] left-[167px] text-2xl text-black'>LinkedIn</span>
           </span>
         </a>
         <a
@@ -57,7 +57,7 @@ function PixelCharacter() {
               width={39}
               height={39}
             />
-            <span className='absolute bottom-[15px] right-5 text-2xl'>Email</span>
+            <span className='absolute bottom-[15px] right-5 text-2xl text-black'>Email</span>
           </span>
         </a>
         <Image

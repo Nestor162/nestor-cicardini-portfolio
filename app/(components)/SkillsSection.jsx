@@ -105,9 +105,11 @@ function SkillsSection() {
   return (
     <article className='mt-28 ms-0 md:ms-9'>
       <div
-        className={`${chakra.className} relative w-5/6 md:w-3/5 text-xl mx-auto mb-6 border border-gray-600 rounded py-3 px-7 md:py-5 md:px-12 mt-32 md:mt-40 shadow-lg`}
+        className={`${chakra.className} relative w-5/6 md:w-3/5 text-xl mx-auto mb-6 border border-gray-600 dark:border-slate-400 rounded py-3 px-7 md:py-5 md:px-12 mt-32 md:mt-40 shadow-lg`}
       >
-        <h2 className={`${michroma.className} absolute -top-5 left-4 text-2xl bg-white px-3`}>Skills</h2>
+        <h2 className={`${michroma.className} absolute -top-5 left-4 text-2xl bg-white dark:bg-slate-800 px-3`}>
+          Skills
+        </h2>
         <span id='skills' className='absolute -top-24 sm:-top-28 w-14 h-8'></span>
 
         <h4 className='hidden xl:block absolute -rotate-90 top-16 start-0'>Frontend</h4>

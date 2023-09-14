@@ -4,14 +4,25 @@ import { chakra } from '../../lib/fonts'
 import IonIcon from '@reacticons/ionicons'
 import './MainSection.css'
 import Link from 'next/link'
+import WaveSeparator from './WaveSeparator'
 
 function MainSection() {
   return (
     <main className={`${chakra.className} w-screen`}>
+      <WaveSeparator />
       <section className='flex flex-col sm:flex-row justify-center gap-0 sm:gap-9 items-center mt-20 sm:mt-32'>
         <Image
+          className='inline-block dark:hidden'
           priority
-          src={'/img/Profile_picture_purple_v1.png'}
+          src='/img/Profile_picture_purple_v1.png'
+          alt='Profile picture of Nestor Cicardini'
+          width={245}
+          height={245}
+        />
+        <Image
+          className='hidden dark:inline-block'
+          priority
+          src='/img/Profile_picture_purple_v2.png'
           alt='Profile picture of Nestor Cicardini'
           width={245}
           height={245}
