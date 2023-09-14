@@ -9,10 +9,10 @@ body {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: black;
 }
 
 .hover-underline-animation::after {
+  @apply bg-black dark:bg-slate-300;
   content: '';
   position: absolute;
   width: 100%;
@@ -28,4 +28,12 @@ body {
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.hover-underline-animation {
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.hover-underline-animation:hover {
+  transform: scale(1.1);
 }

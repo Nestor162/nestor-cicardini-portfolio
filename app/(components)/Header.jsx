@@ -4,13 +4,14 @@ import { michroma } from '../../lib/fonts'
 import Link from 'next/link'
 import IonIcon from '@reacticons/ionicons'
 import './Header.css'
+import ThemeToggler from './ThemeToggler'
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <header
-      className={`${michroma.className} h-16 border-b border-gray-600 fixed top-0 left-0 right-0 bg-white z-50 shadow`}
+      className={`${michroma.className} h-16 border-b border-gray-600 fixed top-0 left-0 right-0 bg-white z-50 shadow dark:bg-slate-600 dark:border-gray-500 dark:text-slate-200`}
     >
       <div className=' h-full flex items-center justify-between mx-4 sm:mx-12'>
         <div>
@@ -25,22 +26,25 @@ function Header() {
 
         <ul className='hidden sm:flex gap-4'>
           <li>
-            <Link href='#about' className='hover:font-bold hover-underline-animation'>
+            <ThemeToggler />
+          </li>
+          <li className='inline-block'>
+            <Link href='#about' className='hover-underline-animation'>
               About me
             </Link>
           </li>
           <li>
-            <Link href='#skills' className='hover:font-bold hover-underline-animation'>
+            <Link href='#skills' className='hover-underline-animation'>
               Skills
             </Link>
           </li>
           <li>
-            <Link href='#projects' className='hover:font-bold hover-underline-animation'>
+            <Link href='#projects' className='hover-underline-animation'>
               Projects
             </Link>
           </li>
           <li>
-            <Link href='#' className='hover:font-bold hover-underline-animation'>
+            <Link href='#' className='hover-underline-animation'>
               Contact
             </Link>
           </li>
