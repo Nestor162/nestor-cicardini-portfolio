@@ -1,0 +1,24 @@
+.wave::before,
+.wave::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+
+.wave::before {
+  @apply bg-white dark:bg-slate-800;
+  width: 55%;
+  height: 109%;
+  /* background-color: #fff; */
+  right: -1.5%;
+  top: 60%;
+}
+.wave::after {
+  @apply bg-slate-100 dark:bg-slate-700;
+  width: 55%;
+  height: 100%;
+  /* background-color: #eff3f7; */
+  left: -1.5%;
+  top: 40%;
+}
