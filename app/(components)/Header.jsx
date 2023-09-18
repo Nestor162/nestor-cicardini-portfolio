@@ -7,7 +7,7 @@ import './Header.css'
 import ThemeToggler from './ThemeToggler'
 import { useTheme } from 'next-themes'
 
-function Header() {
+function Header({ navLinks }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [displayTheme, setDisplayTheme] = useState(false)
   const { resolvedTheme } = useTheme()
@@ -37,22 +37,22 @@ function Header() {
           </li>
           <li className='inline-block'>
             <Link href='#about' className='hover-underline-animation'>
-              About me
+              {navLinks.about}
             </Link>
           </li>
           <li>
             <Link href='#skills' className='hover-underline-animation'>
-              Skills
+              {navLinks.skills}
             </Link>
           </li>
           <li>
             <Link href='#projects' className='hover-underline-animation'>
-              Projects
+              {navLinks.projects}
             </Link>
           </li>
           <li>
             <Link href='#contact' className='hover-underline-animation'>
-              Contact
+              {navLinks.contact}
             </Link>
           </li>
         </ul>
