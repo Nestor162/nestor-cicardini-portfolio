@@ -6,22 +6,13 @@ import React, { useState } from 'react'
 function FlipCard({ title, img1, img2, description, children, linkDemo, linkGitHub, img1Width }) {
   const [isToggled, setToggle] = useState(false)
 
-  const handleHover = () => {
-    setToggle(!isToggled)
-  }
-
-  const handleTouch = () => {
+  const handleClick = () => {
     setToggle(!isToggled)
   }
 
   return (
     <div className='card-container scale-y-[.65] scale-x-[.65] sm:scale-100'>
-      <div
-        className={`card ${isToggled ? 'hover' : ''}`}
-        onMouseEnter={handleHover}
-        onMouseLeave={handleHover}
-        onTouchEnd={handleTouch}
-      >
+      <div className={`card ${isToggled ? 'hover' : ''}`} onClick={handleClick}>
         <div className='front'>
           <div className='relative h-72 w-72'>
             <h3 className='text-center font-bold text-lg mt-4'>{title}</h3>
