@@ -5,20 +5,20 @@ import { vt323 } from '../../lib/fonts'
 function PixelCharacter() {
   return (
     <>
-      <span className={`${vt323.className} flex flex-col items-center gap-3 relative scale-y-[0.9]`}>
+      <div className={`${vt323.className} flex flex-col items-center gap-3 relative scale-y-[0.9]`}>
         <Image
           className='absolute right-2/4'
           src='/img/pixel-avatar/pixel-avatar.png'
           width={185}
           height={185}
-          alt='pixel art representaiton of Nestor'
+          alt='pixel art representation of Nestor'
         />
         <a
           href='https://www.linkedin.com/in/nestor-cicardini-fullstack-developer/'
           target='_blank'
           rel='noopener noreferrer'
         >
-          <span className='relative w-full h-full'>
+          <div className='relative'>
             <Image
               className='ms-28'
               src='/img/pixel-avatar/sepach-bubble-1.png'
@@ -34,7 +34,7 @@ function PixelCharacter() {
               height={28}
             />
             <span className='absolute top-[13px] left-[167px] text-2xl text-black'>LinkedIn</span>
-          </span>
+          </div>
         </a>
         <a
           href='mailto:nestorcicardini@gmail.com'
@@ -42,7 +42,7 @@ function PixelCharacter() {
           rel='noopener noreferrer'
           className='text-dark text-decoration-none'
         >
-          <span className='relative w-full h-full'>
+          <div className='relative'>
             <Image
               className='ms-32 -mt-4'
               src='/img/pixel-avatar/sepach-bubble-2.png'
@@ -58,7 +58,7 @@ function PixelCharacter() {
               height={39}
             />
             <span className='absolute bottom-[15px] right-5 text-2xl text-black'>Email</span>
-          </span>
+          </div>
         </a>
         <Image
           className='absolute -bottom-[39px] -z-50 w-screen'
@@ -67,7 +67,7 @@ function PixelCharacter() {
           width={1600}
           height={1000}
         />
-      </span>
+      </div>
     </>
   )
 }
