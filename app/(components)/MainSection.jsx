@@ -64,7 +64,9 @@ function MainSection() {
             <IonIcon name='mail-outline' size='large'></IonIcon>
           </Link>
         </div>
-        <div className='neon-border-button ms-1'>Download CV</div>
+        <a href='/CV/Nestor_Cicardini_CV_one_page_eng.pdf' download className='neon-border-button ms-1'>
+          Download CV
+        </a>
       </section>
       <div className='flex justify-center mt-24'>
         <div className='w-32'>
