@@ -10,13 +10,17 @@ function FlipCard({ title, img1, img2, description, children, linkDemo, linkGitH
     setToggle(!isToggled)
   }
 
+  const handleTouch = () => {
+    setToggle(!isToggled)
+  }
+
   return (
     <div className='card-container scale-y-[.65] scale-x-[.65] sm:scale-100'>
       <div
         className={`card ${isToggled ? 'hover' : ''}`}
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}
-        onTouchEnd={handleHover}
+        onTouchEnd={handleTouch}
       >
         <div className='front'>
           <div className='relative h-72 w-72'>
