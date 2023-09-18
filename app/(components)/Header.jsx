@@ -44,7 +44,7 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link href='#' className='hover-underline-animation'>
+            <Link href='#contact' className='hover-underline-animation'>
               Contact
             </Link>
           </li>
@@ -87,7 +87,7 @@ function Header() {
           </li>
           <li>
             <Link
-              href='#'
+              href='#contact'
               onClick={() => {
                 setMenuOpen(false)
               }}
