@@ -16,7 +16,7 @@
   right: 0;
   height: 100%;
   width: 16rem;
-  background-color: white;
+  /* background-color: white; */
   user-select: none;
   padding: 1rem;
   transition-timing-function: cubic-bezier(0.79, 0.14, 0.15, 0.86);

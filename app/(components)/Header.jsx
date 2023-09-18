@@ -1,13 +1,20 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { michroma } from '../../lib/fonts'
 import Link from 'next/link'
 import IonIcon from '@reacticons/ionicons'
 import './Header.css'
 import ThemeToggler from './ThemeToggler'
+import { useTheme } from 'next-themes'
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [displayTheme, setDisplayTheme] = useState(false)
+  const { resolvedTheme } = useTheme()
+
+  useEffect(() => {
+    setDisplayTheme(resolvedTheme)
+  }, [resolvedTheme])
 
   return (
     <header
@@ -51,11 +58,11 @@ function Header() {
         </ul>
 
         <ul
-          className={`flex sm:hidden flex-col fixed top-0 end-0 mt-16 p-4 gap-4 text-right text-2xl border-l border-black shadow-lg nav-menu ${
+          className={`flex sm:hidden flex-col fixed top-0 end-0 mt-16 p-4 gap-4 text-right text-2xl border-l border-black shadow-lg nav-menu bg-white dark:bg-slate-700 ${
             menuOpen ? 'open' : ''
           }`}
         >
-          <li>
+          <li className='me-5'>
             <Link
               href='#about'
               onClick={() => {
@@ -65,7 +72,7 @@ function Header() {
               About me
             </Link>
           </li>
-          <li>
+          <li className='me-5'>
             <Link
               href='#skills'
               onClick={() => {
@@ -75,7 +82,7 @@ function Header() {
               Skills
             </Link>
           </li>
-          <li>
+          <li className='me-5'>
             <Link
               href='#projects'
               onClick={() => {
@@ -85,7 +92,7 @@ function Header() {
               Projects
             </Link>
           </li>
-          <li>
+          <li className='me-5'>
             <Link
               href='#contact'
               onClick={() => {
@@ -94,6 +101,10 @@ function Header() {
             >
               Contact
             </Link>
+          </li>
+          <li className='me-5'>
+            <span className='me-3 text-xl'>{displayTheme}</span>
+            <ThemeToggler />
           </li>
         </ul>
       </div>
