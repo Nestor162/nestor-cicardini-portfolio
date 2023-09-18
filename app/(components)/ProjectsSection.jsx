@@ -4,14 +4,14 @@ import './ProjectSection.css'
 import FlipCard from './FlipCard'
 import Image from 'next/image'
 
-function ProjectsSection() {
+function ProjectsSection({ content }) {
   return (
     <article className='mt-28 ms-0 md:ms-9'>
       <div
         className={`${chakra.className} relative w-5/6 md:w-3/5 text-xl mx-auto mb-6 border border-gray-600 dark:border-slate-400 rounded py-3 px-7 md:py-5 md:px-12 mt-32 md:mt-40 shadow-lg`}
       >
         <h2 className={`${michroma.className} absolute -top-5 left-4 text-2xl bg-white dark:bg-slate-800 px-3`}>
-          Projects
+          {content.title}
         </h2>
         <span id='projects' className='absolute -top-24 sm:-top-28 w-14 h-8'></span>
 
@@ -21,7 +21,7 @@ function ProjectsSection() {
             img1='/img/laptop-mwa.png'
             img1Width={240}
             img2='/img/pc-mwa.png'
-            description={'Weather application with a clean and minimalistic interface.'}
+            description={content.project1Description}
             linkDemo='https://minimalweatherapp.vercel.app/'
             linkGitHub='https://github.com/Nestor162/U3-D10-Weekly-Homework-Weather-App'
           >
@@ -50,7 +50,7 @@ function ProjectsSection() {
               img1='/img/tablet-skilltrade.png'
               img1Width={450}
               img2='/img/laptop-skilltrade.png'
-              description={'Skills exchange platform.'}
+              description={content.project2Description}
               linkDemo='https://skilltrade.vercel.app/'
               linkGitHub='https://github.com/Nestor162/SkillTrade-Capstone-Project-Frontend'
             >

@@ -8,15 +8,15 @@ import ProjectsSection from '../(components)/ProjectsSection'
 import SkillsSection from '../(components)/SkillsSection'
 
 export default async function Home({ params: { lang } }) {
-  const { page, navigation } = await getDictionary(lang)
+  const { section, navigation } = await getDictionary(lang)
   return (
     <main>
       <Header navLinks={navigation} />
-      <MainSection />
-      <AboutMe />
-      <SkillsSection />
-      <ProjectsSection />
-      <ContactSection />
+      <MainSection content={section.main} />
+      <AboutMe content={section.about} />
+      <SkillsSection content={section.skills} />
+      <ProjectsSection content={section.projects} />
+      <ContactSection content={section.contact} />
     </main>
   )
 }

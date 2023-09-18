@@ -5,14 +5,31 @@
     "projects": "Projects",
     "contact": "Contact"
   },
-  "page": {
-    "home": {
-      "title": "Welcome to NextJs i18n",
-      "description": "Internationalization in NextJs 13 App router"
+  "section": {
+    "main": {
+      "line1": "I am a",
+      "line2": "FullStack",
+      "line3": "Developer",
+      "button": "Download CV",
+      "cvLang": "eng"
     },
     "about": {
-      "title": "About Us",
-      "description": "This is the about page"
+      "title": "About Me",
+      "paragraph1": "Hello! My name is <strong>Nestor Cicardini</strong>, and I&apos;m a passionate <strong>full-stack programmer from Argentina</strong>.",
+      "paragraph2": "Despite being a novice developer, I&apos;ve already tackled personal projects, gaining <strong>hands-on experience </strong> and building a <strong>strong foundation</strong> in various programming languages, frameworks, and technologies.",
+      "paragraph3": "What sets me apart is my <strong>insatiable curiosity</strong> and commitment to <strong>staying updated</strong> with industry trends, always ready to embrace new challenges and expand my skill set.",
+      "paragraph4": "Thank you for visiting my portfolio! Feel free to explore my projects and get in touch if you&apos;d like to collaborate or discuss any exciting opportunities."
+    },
+    "skills": {
+      "title": "Skills"
+    },
+    "projects": {
+      "title": "Projects",
+      "project1Description": "Weather application with a clean and minimalistic interface.",
+      "project2Description": "Skills exchange platform."
+    },
+    "contact": {
+      "title": "Contact me!"
     }
   }
 }
