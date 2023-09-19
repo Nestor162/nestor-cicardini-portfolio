@@ -1,7 +1,7 @@
 import React from 'react'
 import { chakra, michroma } from '../../lib/fonts'
 
-function AboutMe() {
+function AboutMe({ content }) {
   return (
     <article className='mt-28 ms-0 md:ms-9'>
       <div
@@ -12,30 +12,15 @@ function AboutMe() {
         </h2>
         <span id='about' className='absolute -top-28 w-14 h-8'></span>
 
-        <p>
-          Hello! My name is <strong>Nestor Cicardini</strong>, and I&apos;m a passionate{' '}
-          <strong>full-stack programmer from Argentina</strong>.{' '}
-        </p>
-        <p>
-          Despite being a novice programmer, I&apos;ve already tackled personal projects, gaining{' '}
-          <strong>hands-on experience </strong>
-          and building a <strong>strong foundation</strong> in various programming languages, frameworks, and
-          technologies.
-        </p>
-        <p>
-          What sets me apart is my <strong>insatiable curiosity</strong> and commitment to{' '}
-          <strong>staying updated</strong> with industry trends, always ready to embrace new challenges and expand my
-          skill set.
-        </p>
+        <p dangerouslySetInnerHTML={{ __html: content.paragraph1 }} />
+        <p dangerouslySetInnerHTML={{ __html: content.paragraph2 }} />
+        <p dangerouslySetInnerHTML={{ __html: content.paragraph3 }} />
+        <p dangerouslySetInnerHTML={{ __html: content.paragraph4 }} />
 
         {/* <p>
           Beyond the world of programming I&apos;m an avid reader of science fiction and fantasy books, a fan of anime,
           and I also have a deep fascination with ancient history.
         </p> */}
-        <p>
-          Thank you for visiting my portfolio! Feel free to explore my projects and get in touch if you&apos;d like to
-          collaborate or discuss any exciting opportunities.
-        </p>
       </div>
     </article>
   )

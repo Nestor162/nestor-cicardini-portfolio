@@ -1,0 +1,35 @@
+{
+  "navigation": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "section": {
+    "main": {
+      "line1": "Soy un",
+      "line2": "Desarrollador",
+      "line3": "FullStack",
+      "button": "Descargar CV",
+      "cvLang": "esp"
+    },
+    "about": {
+      "title": "Sobre Mí",
+      "paragraph1": "¡Hola! Mi nombre es <strong>Nestor Cicardini</strong> y soy un apasionado <strong>programador FullStack de Argentina</strong>.",
+      "paragraph2": "A pesar de ser un desarollador novato, ya he abordado proyectos personales, ganando <strong>experiencia práctica</strong> y construyendo una <strong>sólida base</strong> en varios lenguajes de programación, frameworks y tecnologías.",
+      "paragraph3": "Lo que me distingue es mi <strong>insaciable curiosidad</strong> y compromiso por <strong>mantenerme actualizado</strong> con las tendencias de la industria, siempre listo para enfrentar nuevos desafíos y expandir mis habilidades.",
+      "paragraph4": "¡Gracias por visitar mi portafolio! Siéntete libre de explorar mis proyectos y ponte en contacto si te gustaría colaborar o discutir cualquier emocionante oportunidad."
+    },
+    "skills": {
+      "title": "Habilidades"
+    },
+    "projects": {
+      "title": "Proyectos",
+      "project1Description": "Aplicación del clima con una interfaz limpia y minimalista.",
+      "project2Description": "Plataforma de intercambio de habilidades."
+    },
+    "contact": {
+      "title": "!Contáctame!"
+    }
+  }
+}

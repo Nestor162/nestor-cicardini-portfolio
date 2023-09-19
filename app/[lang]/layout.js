@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Providers from './providers'
+import { Locale, i18n } from '@/i18n.config'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,9 +15,13 @@ export const metadata = {
   }
 }
 
-export default function RootLayout({ children }) {
+export async function generateStaticParams() {
+  return i18n.locales.map(locale => ({ lang: locale }))
+}
+
+export default function RootLayout({ children, params }) {
   return (
-    <html className='scroll-smooth' lang='en' suppressHydrationWarning>
+    <html className='scroll-smooth' lang={params.lang} suppressHydrationWarning>
       <body className={`${inter.className} bg-white dark:bg-slate-800 dark:text-slate-300`}>
         <Providers>{children}</Providers>
       </body>

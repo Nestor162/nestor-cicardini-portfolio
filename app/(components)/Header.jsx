@@ -6,8 +6,9 @@ import IonIcon from '@reacticons/ionicons'
 import './Header.css'
 import ThemeToggler from './ThemeToggler'
 import { useTheme } from 'next-themes'
+import LanguagePopover from './LanguagePopover'
 
-function Header() {
+function Header({ navLinks }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [displayTheme, setDisplayTheme] = useState(false)
   const { resolvedTheme } = useTheme()
@@ -37,22 +38,22 @@ function Header() {
           </li>
           <li className='inline-block'>
             <Link href='#about' className='hover-underline-animation'>
-              About me
+              {navLinks.about}
             </Link>
           </li>
           <li>
             <Link href='#skills' className='hover-underline-animation'>
-              Skills
+              {navLinks.skills}
             </Link>
           </li>
           <li>
             <Link href='#projects' className='hover-underline-animation'>
-              Projects
+              {navLinks.projects}
             </Link>
           </li>
           <li>
             <Link href='#contact' className='hover-underline-animation'>
-              Contact
+              {navLinks.contact}
             </Link>
           </li>
         </ul>
@@ -106,7 +107,13 @@ function Header() {
             <span className='me-3 text-xl'>{displayTheme}</span>
             <ThemeToggler />
           </li>
+          <li className='me-5'>
+            <LanguagePopover />
+          </li>
         </ul>
+      </div>
+      <div className='fixed bottom-5  hidden sm:block sm:right-2 lg:right-10  '>
+        <LanguagePopover direction='up' />
       </div>
     </header>
   )
