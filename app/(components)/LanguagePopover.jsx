@@ -9,11 +9,10 @@ const options = [
   { value: 'it', label: 'Italy', image: '/img/icons8-italy-48.png' }
 ]
 
-export default function LanguagePopover() {
+export default function LanguagePopover({ direction }) {
   const router = useRouter()
   const path = usePathname()
 
-  // Obtén el idioma actual de la ruta
   const currentLocale = path.split('/')[1]
 
   const [selectedOption, setSelectedOption] = useState(
@@ -35,12 +34,17 @@ export default function LanguagePopover() {
 
   const filteredOptions = options.filter(option => option.value !== selectedOption.value)
 
-  // Observa cambios en la ruta y actualiza la opción seleccionada
   useEffect(() => {
     const newLocale = path.split('/')[1]
     const newSelectedOption = options.find(option => option.value === newLocale) || options[0]
     setSelectedOption(newSelectedOption)
   }, [path])
+
+  const isUpDirection = direction === 'up'
+
+  const menuClasses = `absolute -translate-y-40 z-10  right-0 left-0 bg-transparent shadow-md border border-slate-400 dark:border-slate-400 rounded-xl ${
+    isUpDirection ? 'top-[79px] w-[74px]' : 'top-[217px] w-[82px]'
+  }`
 
   return (
     <div className='relative inline-block'>
@@ -50,13 +54,13 @@ export default function LanguagePopover() {
       >
         <Image src={selectedOption.image} alt={`${selectedOption.label} flag`} width={24} height={24} />
         <span>
-          <IonIcon name='caret-up-outline'></IonIcon>
+          <IonIcon name={isUpDirection ? 'caret-up-outline' : 'caret-down-outline'}></IonIcon>
         </span>
       </button>
 
       {isOpen && (
-        <div className='absolute right-[5px] top-[79px] z-10 w-16 bg-transparent rounded-md shadow-md -translate-y-40 border border-slate-400 dark:border-slate-400  '>
-          {filteredOptions.map(option => (
+        <div className={menuClasses}>
+          {filteredOptions.map((option, index) => (
             <div
               key={option.value}
               className='flex items-center justify-center space-x-3 px-3 py-2 cursor-pointer  hover:bg-slate-300 dark:hover:bg-slate-200 '
@@ -64,6 +68,9 @@ export default function LanguagePopover() {
             >
               <Image src={option.image} alt={`${option.label} flag`} width={24} height={24} />
               {/* <span>{option.label}</span> */}
+              {index < filteredOptions.length - 1 && (
+                <div className='border border-t-0 border-x-0 h-2 border-slate-400 w-full absolute -left-3 bottom-10' />
+              )}
             </div>
           ))}
         </div>

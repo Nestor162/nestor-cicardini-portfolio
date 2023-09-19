@@ -113,7 +113,7 @@ function Header({ navLinks }) {
         </ul>
       </div>
       <div className='fixed bottom-5  hidden sm:block sm:right-2 lg:right-10  '>
-        <LanguagePopover />
+        <LanguagePopover direction='up' />
       </div>
     </header>
   )
