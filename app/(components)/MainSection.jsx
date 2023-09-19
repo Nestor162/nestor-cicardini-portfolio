@@ -67,7 +67,7 @@ function MainSection({ content }) {
             <span className='animated-gradient-text mb-3'>{content.line3}</span>
           </h1>
 
-          <div className='mt-12'>
+          <div className='mt-12 mx-12 sm:mx-0'>
             <DownloadButton content={content} />
           </div>
         </div>

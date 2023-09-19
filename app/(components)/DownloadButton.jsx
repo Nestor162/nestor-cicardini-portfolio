@@ -13,7 +13,7 @@ export default function DownloadButton({ content }) {
         router.push(filePath)
       }}
       target='_blank'
-      className='neon-border-button ms-1'
+      className='neon-border-button ms-1 flex justify-center sm:inline-block'
     >
       {content.button}
     </a>
