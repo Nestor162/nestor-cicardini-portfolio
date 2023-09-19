@@ -6,6 +6,7 @@ import IonIcon from '@reacticons/ionicons'
 import './Header.css'
 import ThemeToggler from './ThemeToggler'
 import { useTheme } from 'next-themes'
+import LanguagePopover from './LanguagePopover'
 
 function Header({ navLinks }) {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -106,7 +107,13 @@ function Header({ navLinks }) {
             <span className='me-3 text-xl'>{displayTheme}</span>
             <ThemeToggler />
           </li>
+          <li className='me-5'>
+            <LanguagePopover />
+          </li>
         </ul>
+      </div>
+      <div className='fixed bottom-5  hidden sm:block sm:right-2 lg:right-10  '>
+        <LanguagePopover />
       </div>
     </header>
   )
