@@ -48,6 +48,11 @@ function SkillsSection({ content }) {
       name: 'Java'
     },
     {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg',
+      alt: 'kotlin icon',
+      name: 'Kotlin'
+    },
+    {
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
       alt: 'Spring icon',
       name: 'Spring'
@@ -79,6 +84,11 @@ function SkillsSection({ content }) {
       src: '/img/postman.svg',
       alt: 'Postman icon',
       name: 'Postman'
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg',
+      alt: 'Android Studio icon',
+      name: 'Android Studio'
     },
     {
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
