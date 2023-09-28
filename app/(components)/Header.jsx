@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { michroma } from '../../lib/fonts'
 import Link from 'next/link'
 import IonIcon from '@reacticons/ionicons'
@@ -12,10 +12,24 @@ function Header({ navLinks }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [displayTheme, setDisplayTheme] = useState(false)
   const { resolvedTheme } = useTheme()
+  const menuRef = useRef(null)
 
   useEffect(() => {
     setDisplayTheme(resolvedTheme)
   }, [resolvedTheme])
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  })
+
+  const handleClickOutside = event => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setMenuOpen(false)
+    }
+  }
 
   return (
     <header
@@ -59,6 +73,7 @@ function Header({ navLinks }) {
         </ul>
 
         <ul
+          ref={menuRef}
           className={`flex sm:hidden flex-col fixed top-0 end-0 mt-16 p-4 gap-4 text-right text-2xl border-l border-black shadow-lg nav-menu bg-white dark:bg-slate-700 ${
             menuOpen ? 'open' : ''
           }`}
