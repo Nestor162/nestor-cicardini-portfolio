@@ -8,14 +8,14 @@ function ProjectsSection({ content }) {
   return (
     <article className='mt-28 ms-0 md:ms-9'>
       <div
-        className={`${chakra.className} relative w-5/6 md:w-3/5 text-xl mx-auto mb-6 border border-gray-600 dark:border-slate-400 rounded py-3 px-7 md:py-5 md:px-12 mt-32 md:mt-40 shadow-lg`}
+        className={`${chakra.className} relative w-5/6 md:w-3/5 text-xl mx-auto mb-6 border border-gray-600 dark:border-slate-400 rounded py-3 px-7 md:py-5 md:py-12 mt-32 md:mt-40 shadow-lg`}
       >
         <h2 className={`${michroma.className} absolute -top-5 left-4 text-2xl bg-white dark:bg-slate-800 px-3`}>
           {content.title}
         </h2>
         <span id='projects' className='absolute -top-24 sm:-top-28 w-14 h-8'></span>
 
-        <div className='relative w-full h-full flex justify-center items-center gap-0 sm:gap-5 flex-col xl:flex-row p-0 sm:p-10'>
+        <div className='relative w-full h-full flex justify-center items-center gap-0 sm:gap-5 flex-col xl:flex-row xl:flex-wrap p-0 sm:p-0 '>
           <FlipCard
             title='Minimal Weather App'
             img1='/img/laptop-mwa.png'
@@ -44,7 +44,7 @@ function ProjectsSection({ content }) {
               height={50}
             />
           </FlipCard>
-          <div className='-mt-12 sm:mt-0'>
+          <div className='-mt-12 sm:mt-0 me-0'>
             <FlipCard
               title='SkillTrade'
               img1='/img/tablet-skilltrade.png'
@@ -81,6 +81,31 @@ function ProjectsSection({ content }) {
               <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
                 alt='postgresql icon'
+                width={50}
+                height={50}
+              />
+            </FlipCard>
+          </div>
+          <div className='-mt-12 sm:mt-0'>
+            <FlipCard
+              title='YourBMICalculator'
+              img1='/img/BMI_icon.webp'
+              img1Width={69}
+              img2Width={88}
+              img2='/img/BMI_2.png'
+              description={content.project3Description}
+              linkDemo='https://www.linkedin.com/posts/nestor-cicardini-fullstack-developer_androiddevelopment-kotlin-firstapp-activity-7113169368183623680-6DEH?utm_source=share&utm_medium=member_desktop'
+              linkGitHub='https://github.com/Nestor162/YourBMICalculator'
+            >
+              <Image
+                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg'
+                alt='Kotlin icon'
+                width={50}
+                height={50}
+              />
+              <Image
+                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg'
+                alt='Android Studio icon'
                 width={50}
                 height={50}
               />

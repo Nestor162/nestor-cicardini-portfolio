@@ -26,7 +26,8 @@
     "projects": {
       "title": "Progetti",
       "project1Description": "Applicazione meteo con un'interfaccia semplice e minimalista.",
-      "project2Description": "Piattaforma di scambio di competenze."
+      "project2Description": "Piattaforma di scambio di competenze.",
+      "project3Description": "Calcola il tuo Indice di Massa Corporea (IMC) in base al tuo peso, altezza, età e sesso."
     },
     "contact": {
       "title": "Contattami!"
