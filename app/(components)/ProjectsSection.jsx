@@ -15,7 +15,7 @@ function ProjectsSection({ content }) {
         </h2>
         <span id='projects' className='absolute -top-24 sm:-top-28 w-14 h-8'></span>
 
-        <div className='relative w-full h-full flex justify-center items-center gap-0 sm:gap-5 flex-col lg:flex-row p-0 sm:p-10'>
+        <div className='relative w-full h-full flex justify-center items-center gap-0 sm:gap-5 flex-col xl:flex-row p-0 sm:p-10'>
           <FlipCard
             title='Minimal Weather App'
             img1='/img/laptop-mwa.png'
