@@ -92,7 +92,7 @@ function ProjectsSection({ content }) {
               img1='/img/BMI_icon.webp'
               img1Width={69}
               img2Width={88}
-              img2='/img/BMI_2.png'
+              img2='/img/BMI_1.png'
               description={content.project3Description}
               linkDemo='https://www.linkedin.com/posts/nestor-cicardini-fullstack-developer_androiddevelopment-kotlin-firstapp-activity-7113169368183623680-6DEH?utm_source=share&utm_medium=member_desktop'
               linkGitHub='https://github.com/Nestor162/YourBMICalculator'
