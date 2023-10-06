@@ -92,10 +92,43 @@ function ProjectsSection({ content }) {
               img1='/img/BMI_icon.webp'
               img1Width={69}
               img2Width={88}
+              leftImg1={160}
+              leftImg2={55}
+              topImg1={110}
+              topImg2={62}
               img2='/img/BMI_1.png'
               description={content.project3Description}
               linkDemo='https://www.linkedin.com/posts/nestor-cicardini-fullstack-developer_androiddevelopment-kotlin-firstapp-activity-7113169368183623680-6DEH?utm_source=share&utm_medium=member_desktop'
               linkGitHub='https://github.com/Nestor162/YourBMICalculator'
+            >
+              <Image
+                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg'
+                alt='Kotlin icon'
+                width={50}
+                height={50}
+              />
+              <Image
+                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg'
+                alt='Android Studio icon'
+                width={50}
+                height={50}
+              />
+            </FlipCard>
+          </div>
+          <div className='-mt-12 sm:mt-0'>
+            <FlipCard
+              title='SimpleToDoApp'
+              img1='/img/STDA-logo.png'
+              img1Width={69}
+              img2Width={88}
+              leftImg1={160}
+              leftImg2={55}
+              topImg1={110}
+              topImg2={62}
+              img2='/img/STDA.png'
+              description={content.project4Description}
+              linkDemo='https://github.com/Nestor162/SimpleToDoApp'
+              linkGitHub='https://github.com/Nestor162/SimpleToDoApp'
             >
               <Image
                 src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg'

@@ -27,7 +27,8 @@
       "title": "Proyectos",
       "project1Description": "Aplicación del clima con una interfaz limpia y minimalista.",
       "project2Description": "Plataforma de intercambio de habilidades.",
-      "project3Description": "Calcula tu Índice de Masa Corporal (IMC) en función de tu peso, altura, edad y sexo."
+      "project3Description": "Calcula tu Índice de Masa Corporal (IMC) en función de tu peso, altura, edad y sexo.",
+      "project4Description": "Una aplicación sencilla y práctica para crear y gestionar tareas."
     },
     "contact": {
       "title": "¡Contáctame!"
