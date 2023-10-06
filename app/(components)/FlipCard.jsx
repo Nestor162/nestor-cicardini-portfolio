@@ -3,7 +3,21 @@ const { default: Image } = require('next/image')
 import IonIcon from '@reacticons/ionicons'
 import React, { useState } from 'react'
 
-function FlipCard({ title, img1, img2, description, children, linkDemo, linkGitHub, img1Width, img2Width = 350 }) {
+function FlipCard({
+  title,
+  img1,
+  img2,
+  description,
+  children,
+  linkDemo,
+  linkGitHub,
+  img1Width,
+  img2Width = 350,
+  leftImg1 = 'unset',
+  leftImg2 = '2.5rem',
+  topImg1 = '6rem',
+  topImg2 = '3rem'
+}) {
   const [isToggled, setToggle] = useState(false)
 
   const handleClick = () => {
@@ -18,6 +32,7 @@ function FlipCard({ title, img1, img2, description, children, linkDemo, linkGitH
             <h3 className='text-center font-bold text-lg mt-4'>{title}</h3>
             <Image
               className='absolute top-24 right-20 z-10'
+              style={{ left: leftImg1, top: topImg1 }}
               src={img1}
               alt={`${title} project in a laptop screen`}
               width={img1Width}
@@ -25,6 +40,7 @@ function FlipCard({ title, img1, img2, description, children, linkDemo, linkGitH
             />
             <Image
               className='absolute left-10 top-12'
+              style={{ left: leftImg2, top: topImg2 }}
               src={img2}
               alt={`${title} project in a pc screen`}
               width={img2Width}
