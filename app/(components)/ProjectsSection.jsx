@@ -144,6 +144,31 @@ function ProjectsSection({ content }) {
               />
             </FlipCard>
           </div>
+          <div className='-mt-12 sm:mt-0'>
+            <FlipCard
+              title='GameChase'
+              img1='/img/gc_laptop.png'
+              img1Width={240}
+              img2='/img/gc_desktop.png'
+              description={content.project5Description}
+              linkDemo='https://gamechase.vercel.app/'
+              linkGitHub='https://github.com/Nestor162/GameChase'
+            >
+              <Image
+                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+                alt='React icon'
+                width={50}
+                height={50}
+              />
+              <Image src='/img/icons8-chakra-ui-48.png' alt='Chakra UI icon' width={50} height={50} />
+              <Image
+                src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
+                alt='Typescript icon'
+                width={50}
+                height={50}
+              />
+            </FlipCard>
+          </div>
         </div>
       </div>
     </article>

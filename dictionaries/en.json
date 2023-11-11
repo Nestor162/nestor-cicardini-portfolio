@@ -28,7 +28,8 @@
       "project1Description": "Weather application with a clean and minimalistic interface.",
       "project2Description": "Skills exchange platform.",
       "project3Description": "Calculates your Body Mass Index (BMI) based on your weight, height, age, and gender.",
-      "project4Description": "A simple and handy app for creating and managing tasks."
+      "project4Description": "A simple and handy app for creating and managing tasks.",
+      "project5Description": "Find your favorite games or discover new ones."
     },
     "contact": {
       "title": "Contact me!"
